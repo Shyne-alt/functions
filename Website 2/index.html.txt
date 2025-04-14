@@ -1,0 +1,17 @@
+<!-- Tambahkan sebelum </body> -->
+<div id="payment-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>💳 Bayar untuk Lanjut Chat</h2>
+        <p>Biaya: Rp5.000</p>
+        <div class="ewallet-buttons">
+            <button onclick="payWith('shopeepay')">ShopeePay</button>
+            <button onclick="payWith('gopay')">Gopay</button>
+            <button onclick="payWith('ovo')">OVO</button>
+        </div>
+        <div id="payment-instruction" class="hidden">
+            <p id="payment-detail">Silakan selesaikan pembayaran di app e-wallet Anda.</p>
+            <button onclick="checkPayment()">Saya Sudah Bayar</button>
+        </div>
+    </div>
+</div>

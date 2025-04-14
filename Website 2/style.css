@@ -1,0 +1,44 @@
+/* Modal Pembayaran */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal .close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.ewallet-buttons button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+}
+
+.ewallet-buttons button:nth-child(1) { background: #FF2D55; } /* ShopeePay */
+.ewallet-buttons button:nth-child(2) { background: #00AA13; } /* Gopay */
+.ewallet-buttons button:nth-child(3) { background: #4E2E8D; } /* OVO */
+
+.hidden {
+    display: none;
+}
